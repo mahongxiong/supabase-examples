@@ -69,9 +69,6 @@ const Layout = ({ children }: LayoutProps) => {
               spacing={4}
               display={{ base: "none", md: "flex" }}
             >
-              {/* {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
-              ))} */}
             </HStack>
           </HStack>
           <Flex alignItems={"center"}>
@@ -82,7 +79,7 @@ const Layout = ({ children }: LayoutProps) => {
                   rounded={"full"}
                   variant={"link"}
                   cursor={"pointer"}
-                  minW={0}
+                  minW={3}
                 >
                   <Avatar size={"sm"} name={session?.user.email} />
                 </MenuButton>

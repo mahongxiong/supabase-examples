@@ -95,8 +95,9 @@ const Todos = () => {
       <VStack>
         {data!.map((todo: any) => (
           <HStack key={todo.id} spacing="24px">
-            <Flex p={6} w="300px" h="50px" justifyContent="space-between">
+            <Flex p={6} w="500px" h="50px" justifyContent="space-between">
               <Text>{todo.name}</Text>
+              <Text>{todo.created_at}</Text>
 
               <Flex w="10px">
                 <DeleteIcon
